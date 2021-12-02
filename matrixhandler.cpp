@@ -116,6 +116,8 @@ void MatrixHandler::readFromFile()
     file.close();
 }
 
+/*-----------------------------------------------ЗАПИСЬ ИЗ ФАЙЛА--------------------------------------------*/
+
 void MatrixHandler::writeInFile()
 {
     QTextStream out(stdout);
@@ -144,6 +146,8 @@ void MatrixHandler::writeInFile()
     file.close();
 }
 
+/*-----------------------------------------------ПРИСВОЕНИЕ МАТРИЦЫ--------------------------------------------*/
+
 void MatrixHandler::setElValues(int *elementsB)
 {
     for (int i = 0; i < size; i++)
@@ -151,6 +155,8 @@ void MatrixHandler::setElValues(int *elementsB)
         mElements = elementsB;
     }
 }
+
+/*-----------------------------------------------СРАВНЕНИЕ МАТРИЦ--------------------------------------------*/
 
 bool MatrixHandler::compareElements(int *elementsB)
 {

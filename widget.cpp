@@ -222,6 +222,8 @@ void Widget::doAddition()
     connect(buttonEsc, &QPushButton::clicked, this, &Widget::onEscapeToMenu);
 }
 
+/*------------------------Вывод матрицы--------------------------------------*/
+
 void Widget::doPrint()
 {
     int rows = matrices.at(0)->getColumnsAndRows();
@@ -234,6 +236,8 @@ void Widget::doPrint()
         layout->addWidget(label);
     }
 }
+
+/*------------------------Проверка на равенство двух матриц--------------------------------------*/
 
 void Widget::checkMatrices()
 {
@@ -268,6 +272,8 @@ void Widget::checkMatrices()
     connect(buttonFile, &QPushButton::clicked, this, &Widget::onCheckMatrices1);
     connect(buttonCancel, &QPushButton::clicked, this, &Widget::onEscapeToMenu);
 }
+
+/*------------------------Присвоение матрице A значения матрицы B--------------------------------------*/
 
 void Widget::setA()
 {
