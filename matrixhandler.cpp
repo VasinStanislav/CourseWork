@@ -91,7 +91,7 @@ void MatrixHandler::readFromFile()
 {
     QTextStream out(stdout);
 
-    QString fileName = "D:/qt_projects/matrix/";
+    QString fileName = "matrix/";
     fileName.append(name + ".txt");
     QFile file(fileName);
 
@@ -122,7 +122,7 @@ void MatrixHandler::writeInFile()
 {
     QTextStream out(stdout);
 
-    QString fileName = "D:/qt_projects/matrix/";
+    QString fileName = "matrix/";
     fileName.append(name + ".txt");
     QFile file(fileName);
 
